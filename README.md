@@ -1,17 +1,17 @@
-# arquivo-arrff
-wekka
- @RELATION pisa2025_science
+@relation pisa_dataset
 
-@ATTRIBUTE country STRING
-@ATTRIBUTE student_id NUMERIC
-@ATTRIBUTE explain_phenomena NUMERIC
-@ATTRIBUTE evaluate_projects NUMERIC
-@ATTRIBUTE decision_making NUMERIC
-@ATTRIBUTE environmental_impact NUMERIC
-@ATTRIBUTE respect_perspectives NUMERIC
+@attribute student_id numeric
+@attribute country string
+@attribute gender {male, female}
+@attribute math_score numeric
+@attribute reading_score numeric
+@attribute science_score numeric
+@attribute school_type {public, private}
 
-@DATA
-"Brazil", 1, 480, 450, 470, 460, 490
-"USA", 2, 520, 510, 500, 530, 520
-"Germany", 3, 540, 520, 515, 540, 535
-"Japan", 4, 550, 540, 530, 550, 540
+@data
+1, Brazil, male, 420, 380, 400, public
+2, Brazil, female, 480, 520, 450, private
+3, USA, female, 600, 590, 610, private
+4, USA, male, 550, 530, 560, public
+5, China, female, 700, 720, 710, private
+
